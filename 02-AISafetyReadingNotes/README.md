@@ -1,9 +1,7 @@
 # AI Safety Reading Notes
 
-| | |
-|:---|:---|
-| **Author** | [Eneko Martinez de Morentin Fusco](https://www.linkedin.com/in/enekomtz/) |
-| **Date** | April 2026 |
+- **Author:** [Eneko Martinez de Morentin Fusco](https://www.linkedin.com/in/enekomtz/)
+- **Date:** April 2026
 
 I spent most of my career thinking about system reliability in terms of uptime, latency budgets, and incident response. The assumption was always the same: the system does what it was designed to do, and failures come from bugs, misconfigurations, or unexpected load. AI systems break that assumption. A model can pass every evaluation, behave correctly in every test environment, and still pursue objectives its designers never intended. That is a fundamentally different kind of engineering problem, and I wanted to understand it properly.
 
@@ -15,11 +13,9 @@ I am not summarizing these papers. I am trying to understand what they mean for 
 
 ## Document 1: [Anthropic Core Views on AI Safety](https://www.anthropic.com/research/core-views-on-ai-safety)
 
-| | |
-|:---|:---|
-| **Authors** | [Anthropic](https://x.com/AnthropicAI) leadership, primarily [Dario Amodei](https://x.com/DarioAmodei) and team |
-| **Published** | March 2023 |
-| **Impact** | Anthropic's definitive public strategy document. Widely referenced in AI governance discussions and cited by policymakers examining frontier AI development |
+- **Authors:** [Anthropic](https://x.com/AnthropicAI) leadership, primarily [Dario Amodei](https://x.com/DarioAmodei) and team.
+- **Published:** March 2023.
+- **Impact:** Anthropic's definitive public strategy document. Widely referenced in AI governance discussions and cited by policymakers examining frontier AI development.
 
 ### Core Question
 
@@ -45,11 +41,9 @@ The portfolio approach maps directly onto **canary deployments and feature flags
 
 ## Document 2: [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565)
 
-| | |
-|:---|:---|
-| **Authors** | [Dario Amodei](https://x.com/DarioAmodei), [Chris Olah](https://x.com/ch402), [Jacob Steinhardt](https://jsteinhardt.stat.berkeley.edu/), [Paul Christiano](https://paulfchristiano.com/), [John Schulman](https://x.com/johnschulman2), Dan Mané |
-| **Published** | June 2016 |
-| **Impact** | Over 2,700 citations on [Semantic Scholar](https://www.semanticscholar.org/paper/Concrete-Problems-in-AI-Safety-Amodei-Olah/e86f71ca2948d17b003a5f068db1ecb2b77827f7). Widely considered the founding document of the modern AI safety field. Transformed safety from a philosophical concern into an engineering research agenda |
+- **Authors:** [Dario Amodei](https://x.com/DarioAmodei), [Chris Olah](https://x.com/ch402), [Jacob Steinhardt](https://jsteinhardt.stat.berkeley.edu/), [Paul Christiano](https://paulfchristiano.com/), [John Schulman](https://x.com/johnschulman2), Dan Mané.
+- **Published:** June 2016.
+- **Impact:** Over 2,700 citations on [Semantic Scholar](https://www.semanticscholar.org/paper/Concrete-Problems-in-AI-Safety-Amodei-Olah/e86f71ca2948d17b003a5f068db1ecb2b77827f7). Widely considered the founding document of the modern AI safety field. Transformed safety from a philosophical concern into an engineering research agenda.
 
 ### Core Question
 
@@ -75,11 +69,9 @@ Distributional shift is the ML analogue of what I encounter in **observability p
 
 ## Document 3: [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html)
 
-| | |
-|:---|:---|
-| **Authors** | [Nelson Elhage](https://nelhage.com/), [Tristan Hume](https://thume.ca/), [Catherine Olsson](https://x.com/catherineols), Nicholas Schiefer, Tom Henighan, Shauna Kravec, Zac Hatfield-Dodds, Robert Lasenby, Dawn Drain, Carol Chen, Roger Grosse, Sam McCandlish, Jared Kaplan, [Dario Amodei](https://x.com/DarioAmodei), Martin Wattenberg, [Chris Olah](https://x.com/ch402) |
-| **Published** | September 2022 via the [Transformer Circuits Thread](https://transformer-circuits.pub/) |
-| **Impact** | Over 500 citations. Established the theoretical foundation for the sparse autoencoder research program at Anthropic and across the interpretability community. Directly motivated Document 5 in this list |
+- **Authors:** [Nelson Elhage](https://nelhage.com/), [Tristan Hume](https://thume.ca/), [Catherine Olsson](https://x.com/catherineols), Nicholas Schiefer, Tom Henighan, Shauna Kravec, Zac Hatfield-Dodds, Robert Lasenby, Dawn Drain, Carol Chen, Roger Grosse, Sam McCandlish, Jared Kaplan, [Dario Amodei](https://x.com/DarioAmodei), Martin Wattenberg, [Chris Olah](https://x.com/ch402).
+- **Published:** September 2022 via the [Transformer Circuits Thread](https://transformer-circuits.pub/).
+- **Impact:** Over 500 citations. Established the theoretical foundation for the sparse autoencoder research program at Anthropic and across the interpretability community. Directly motivated Document 5 in this list.
 
 ### Core Question
 
@@ -105,11 +97,9 @@ Superposition is structurally similar to **hash collisions in hash maps**. When 
 
 ## Document 4: [Sleeper Agents: Training Deceptive LLMs That Persist Through Safety Training](https://arxiv.org/abs/2401.05566)
 
-| | |
-|:---|:---|
-| **Authors** | [Evan Hubinger](https://x.com/EvanHub), Carson Denison, Jesse Mu, Mike Lambert, Meg Tong, Monte MacDiarmid, Tamera Lanham, Daniel M. Ziegler, and [31 additional co-authors](https://arxiv.org/abs/2401.05566) including [Paul Christiano](https://paulfchristiano.com/), [Sam Bowman](https://x.com/sleepinyourhat), [Jared Kaplan](https://physics-astronomy.jhu.edu/directory/jared-kaplan/), and [Ethan Perez](https://x.com/EthanJPerez) |
-| **Published** | January 2024 |
-| **Impact** | Over 400 citations since publication. Featured across major outlets and widely discussed on the [Alignment Forum](https://www.alignmentforum.org/posts/ZAsJv7xijKTfZkMtr/sleeper-agents-training-deceptive-llms-that-persist-through). Directly influenced Anthropic's responsible scaling framework and subsequent [alignment faking research](https://www.anthropic.com/research/alignment-faking-in-large-language-models). Hubinger now leads the [Alignment Stress-Testing team](https://www.alignmentforum.org/users/evhub) at Anthropic |
+- **Authors:** [Evan Hubinger](https://x.com/EvanHub), Carson Denison, Jesse Mu, Mike Lambert, Meg Tong, Monte MacDiarmid, Tamera Lanham, Daniel M. Ziegler, and [31 additional co-authors](https://arxiv.org/abs/2401.05566) including [Paul Christiano](https://paulfchristiano.com/), [Sam Bowman](https://x.com/sleepinyourhat), [Jared Kaplan](https://physics-astronomy.jhu.edu/directory/jared-kaplan/), and [Ethan Perez](https://x.com/EthanJPerez).
+- **Published:** January 2024.
+- **Impact:** Over 400 citations since publication. Featured across major outlets and widely discussed on the [Alignment Forum](https://www.alignmentforum.org/posts/ZAsJv7xijKTfZkMtr/sleeper-agents-training-deceptive-llms-that-persist-through). Directly influenced Anthropic's responsible scaling framework and subsequent [alignment faking research](https://www.anthropic.com/research/alignment-faking-in-large-language-models). Hubinger now leads the [Alignment Stress-Testing team](https://www.alignmentforum.org/users/evhub) at Anthropic.
 
 ### Core Question
 
@@ -135,11 +125,9 @@ This maps directly to the problem of **dormant bugs triggered by environmental c
 
 ## Document 5: [Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet](https://transformer-circuits.pub/2024/scaling-monosemanticity/)
 
-| | |
-|:---|:---|
-| **Authors** | [Adly Templeton](https://x.com/TempletonAdly), Tom Conerly, Jonathan Marcus, Jack Lindsey, Trenton Bricken, and [21 additional co-authors](https://transformer-circuits.pub/2024/scaling-monosemanticity/) including [Chris Olah](https://x.com/ch402) and Tom Henighan |
-| **Published** | May 2024 via the [Transformer Circuits Thread](https://transformer-circuits.pub/) |
-| **Impact** | Anthropic's most widely covered interpretability result. Spawned the viral "Golden Gate Claude" demonstration. Established sparse autoencoders as the dominant paradigm in production-scale interpretability. Follow-up: [attribution graphs on Claude 3.5 Haiku](https://transformer-circuits.pub/2025/attribution-graphs/biology.html) |
+- **Authors:** [Adly Templeton](https://x.com/TempletonAdly), Tom Conerly, Jonathan Marcus, Jack Lindsey, Trenton Bricken, and [21 additional co-authors](https://transformer-circuits.pub/2024/scaling-monosemanticity/) including [Chris Olah](https://x.com/ch402) and Tom Henighan.
+- **Published:** May 2024 via the [Transformer Circuits Thread](https://transformer-circuits.pub/).
+- **Impact:** Anthropic's most widely covered interpretability result. Spawned the viral "Golden Gate Claude" demonstration. Established sparse autoencoders as the dominant paradigm in production-scale interpretability. Follow-up: [attribution graphs on Claude 3.5 Haiku](https://transformer-circuits.pub/2025/attribution-graphs/biology.html).
 
 ### Core Question
 
